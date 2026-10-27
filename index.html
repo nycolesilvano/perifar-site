@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Perifar | Moda e eventos da periferia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#topo" aria-label="Perifar, início"><img src="/src/img/logo.png" alt="">Perifar</a>
+      <nav id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#evento">Evento</a></li>
+          <li><a href="#loja">Loja</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <button class="cart" id="cart" type="button" aria-label="Sacola">Sacola<b id="count">0</b></button>
+        <button class="login" type="button">Login</button>
+        <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero" style="padding-top:4rem">
+      <div class="wrap">
+        <div>
+          <span class="tag">moda feita no território</span>
+          <h1>A moda que nasce na periferia atravessa a cidade.</h1>
+          <p class="lead">A Perifar conecta criadores, marcas e público em um evento de moda e em uma loja que valorizam
+            a identidade, o trabalho e a cultura das quebradas.</p>
+          <div class="acts">
+            <a class="btn red" href="#evento">Conheça o evento</a>
+            <a class="btn alt" href="#loja">Ver a loja</a>
+          </div>
+        </div>
+        <div class="logo-big"><img src="/src/img/logo.png"
+            alt="Logo da Perifar: rapaz de cabelo black power sorrindo, com band-aid na testa e brinco de brilhante">
+        </div>
+      </div>
+    </section>
+
+    <div class="strip" aria-hidden="true">
+      <div class="wrap">
+        <ul>
+          <li>Moda autoral</li>
+          <li>Cultura de rua</li>
+          <li>Produção local</li>
+          <li>Economia criativa</li>
+          <li>Identidade</li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="sobre">
+      <div class="wrap about">
+        <div>
+          <div class="head">
+            <h2>Uma empresa de moda com raiz no bairro.</h2>
+          </div>
+          <p>A Perifar é uma empresa de moda e eventos criada para dar escala, estrutura e visibilidade a quem já produz
+            estilo todos os dias nas periferias. Trabalhamos com estilistas, costureiras, modelos, fotógrafos e marcas
+            independentes.</p>
+          <p>Nosso evento anual reúne desfiles, feira de marcas e debates. A loja leva essa produção para o dia a dia,
+            com peças desenhadas e confeccionadas por quem conhece a rua que veste.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>Identidade</h3>
+            <p>Referências do território aparecem na modelagem, nas estampas e na forma de apresentar cada coleção.</p>
+          </div>
+          <div class="pillar">
+            <h3>Renda local</h3>
+            <p>Parte da produção é contratada em ateliês e cooperativas dos próprios bairros.</p>
+          </div>
+          <div class="pillar">
+            <h3>Profissionalização</h3>
+            <p>Mentoria, vitrine e contato com compradores para marcas em crescimento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evento">
+      <div class="wrap ev">
+        <div>
+          <span class="tag">edição 2027</span>
+          <h2>Perifar Moda: desfiles, feira e conversa.</h2>
+          <div class="count" id="countdown" aria-live="off">
+            <div><strong id="d">--</strong><span>dias</span></div>
+            <div><strong id="h">--</strong><span>horas</span></div>
+            <div><strong id="m">--</strong><span>min</span></div>
+            <div><strong id="s">--</strong><span>seg</span></div>
+          </div>
+          <ul class="facts">
+            <li>26 de fevereiro de 2027, a partir das 20h.</li>
+          </ul>
+          <a class="btn red" href="#contato">Quero me inscrever</a>
+        </div>
+        <ol class="sched" aria-label="Programação">
+          <li><time>14h</time>
+            <h3>Abertura e feira de marcas</h3>
+            <p>Mais de 40 marcas independentes expõem e vendem suas peças.</p>
+          </li>
+          <li><time>16h</time>
+            <h3>Desfile coletivo</h3>
+            <p>Coleções de criadores convidados e da própria Perifar.</p>
+          </li>
+          <li><time>18h</time>
+            <h3>Mesa: moda e território</h3>
+            <p>Conversa aberta sobre mercado, renda e criação.</p>
+          </li>
+          <li><time>20h</time>
+            <h3>Show de encerramento</h3>
+            <p>Apresentações musicais com artistas da cena local.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="loja">
+      <div class="wrap">
+        <div class="head">
+          <h2>Loja Perifar</h2>
+          <p>Seleção inicial de peças. As fotos e os preços finais entram na próxima versão.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar por categoria">
+          <button class="chip" type="button" data-f="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-f="camisetas" aria-pressed="false">Camisetas</button>
+          <button class="chip" type="button" data-f="agasalhos" aria-pressed="false">Agasalhos</button>
+          <button class="chip" type="button" data-f="calcas" aria-pressed="false">Calças</button>
+          <button class="chip" type="button" data-f="acessorios" aria-pressed="false">Acessórios</button>
+        </div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section class="news" id="contato">
+      <div class="wrap">
+        <div>
+          <h2>Receba novidades da Perifar.</h2>
+          <p style="margin-top:1rem">Cadastre seu e-mail para saber de lançamentos, inscrições do evento e novas
+            coleções.</p>
+        </div>
+        <form id="form" novalidate>
+          <input id="email" type="email" placeholder="seu@email.com" aria-label="E-mail" required>
+          <button class="btn" type="submit">Cadastrar e-mail</button>
+          <p class="msg" id="msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <h4>Perifar</h4>
+          <p>Perifar Moda e Eventos Ltda.<br>Empresa fictícia criada para fins de teste.</p>
+          <p>CNPJ 00.000.000/0001-00<br>Rua Exemplo, 123, Zona Leste<br>São Paulo, SP, 00000-000</p>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#sobre">Quem somos</a></li>
+            <li><a href="#sobre">Missão e valores</a></li>
+            <li><a href="#evento">O evento</a></li>
+            <li><a href="#contato">Trabalhe conosco</a></li>
+            <li><a href="#contato">Imprensa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#contato">Fale conosco</a></li>
+            <li><a href="#loja">Trocas e devoluções</a></li>
+            <li><a href="#loja">Entrega e prazos</a></li>
+            <li><a href="#contato">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#topo">Política de privacidade</a></li>
+            <li><a href="#topo">Termos de uso</a></li>
+            <li><a href="#topo">Política de cookies</a></li>
+          </ul>
+          <p style="margin-top:1rem">contato@perifar.example<br>(11) 0000-0000</p>
+        </div>
+      </div>
+      <div class="legal">© <span id="year">2026</span> Perifar Moda e Eventos Ltda. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Sacola de compras">
+    <div class="d-head">
+      <h3>Sua sacola</h3>
+      <button class="d-close" id="close" type="button" aria-label="Fechar sacola">✕</button>
+    </div>
+    <ul class="d-list" id="items"></ul>
+    <p class="d-empty" id="empty">Sua sacola está vazia. Escolha uma peça na loja.</p>
+    <div class="d-foot">
+      <div class="d-total"><span>Subtotal</span><strong id="total">R$ 0,00</strong></div>
+      <button class="btn red" type="button">Finalizar compra</button>
+      <button class="d-clear" id="clear" type="button">Limpar sacola</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
